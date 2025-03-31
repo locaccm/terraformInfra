@@ -1,5 +1,5 @@
 module "bdd_locaccm" {
-  source = "./modules/cloudsql"
+  source = "./modules/cloudSQL"
   database_name = "bdd-locaccm"
   region = "europe-west1"
   db_instance_tier = "db-custom-2-8192"
