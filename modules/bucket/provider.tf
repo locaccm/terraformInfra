@@ -1,5 +1,5 @@
 provider "google" {
-  project     = "projet-locaCCM"
+  project     = "LocaCCM"
   region      = "europe-west1"
   zone        = "europe-west1-d"
 }
