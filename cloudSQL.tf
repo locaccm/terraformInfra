@@ -9,5 +9,5 @@ module "bdd_locaccm" {
   db_disk_size         = 20
   db_disk_type         = "PD_SSD"
   db_disk_autoresize   = false
-  private_network = "projects/<PROJECT_ID>/global/networks/<VPC_NAME>"
+  private_network = module.vpc_network.vpc_self_link
 }
