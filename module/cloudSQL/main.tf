@@ -4,8 +4,16 @@ resource "google_sql_database_instance" "main" {
   region           = var.region
 
   settings {
-    # Second-generation instance tiers are based on the machine
-    # type. See argument reference below.
     tier = var.db_instance_tier
+
+    availability_type = var.db_availability_type //"ZONAL"
+    disk_size         = var.db_disk_size // disk size 20GB
+    disk_type         = var.db_disk_type//"PD_SSD"
+    disk_autoresize   = var.db_disk_autoresize // false
+
+    ip_configuration {
+      ipv4_enabled    = false
+      private_network = var.private_network
+    }
   }
 }
