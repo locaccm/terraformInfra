@@ -6,9 +6,3 @@ resource "google_storage_bucket" "buckets" {
 
   uniform_bucket_level_access = var.bucket_level_access
 }
-
-resource "google_storage_bucket_iam_member" "bucket_iam_management" {
-  bucket = var.bucket_name
-  role   = var.iam_management_role
-  member = var.iam_management_member
-}

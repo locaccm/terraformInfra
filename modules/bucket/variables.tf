@@ -21,13 +21,3 @@ variable "bucket_storage_class" {
   type = string
   description = "GCP storage class of bucket"
 }
-
-variable "iam_management_role" {
-  type = string
-  description = "Bucket role selector for permission management"
-}
-
-variable "iam_management_member" {
-  type = string
-  description = "Bucket member selector for permission management"
-}
