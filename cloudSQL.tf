@@ -4,7 +4,7 @@ module "bdd_locaccm" {
 
   region = "europe-west1"
 
-  db_instance_tier = "db-custom-2-8192"
+  db_instance_tier = "db-perf-optimized-N-2"
   database_version = "POSTGRES_17"
 
   db_availability_type = "ZONAL"
