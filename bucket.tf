@@ -6,4 +6,3 @@ module "projet_bucket" {
   bucket_force_destroy = true
   bucket_level_access  = true
 }
-

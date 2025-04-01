@@ -2,6 +2,7 @@ variable "bucket_name" {
   type = string
   description = "Bucket FQDN name"
 }
+
 variable "bucket_location" {
   type = string
   description = "GCS location"
